@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="/styles/player.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="return">&lt; HOME PAGE</a>
+    </header>
+    <main>
+        <audio id="player-audio">
+            <source src="http://127.0.0.1:5500/mp3/utwor-pierwszy.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/mp3/utwor-drugi.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/mp3/utwor-trzeci.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/mp3/utwor-czwarty.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/mp3/utwor-piaty.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/mp3/utwor-szosty.mp3" type="audio/mpeg">
+        </audio>
+        <div class="main">
+            <div class="left-content">
+                <img src="/img/photo.png" alt="left photo">
+                <div class="progress-line">
+                    <div id="progress-bottom" class="progress-line-bottom">
+
+                    </div>
+                    <div id="progress-on" class="progress-line-on-top">
+
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="prev">
+                        <img src="/img/prev.png" alt="prev" onclick="PlayPrevSong();">
+                    </div>
+                    <div id="playButton" class="play-button-on">
+                        <img src="/img/play-button.png" alt="play button" onclick="changePlayButtonToPauseButton()">
+                    </div>
+                    <div id="pauseButton" class="pause-button-off">
+                        <img src="/img/pause-button.png" alt="pause button" onclick="changePauseButtonToPlayButton()">
+                    </div>
+                    <div class="next">
+                        <img src="/img/next.png" alt="next" onclick="PlayNextSong();">
+                    </div>
+                    <div id="muteButton" class="volume" onclick="Mute();">
+                        <img id="mute-button" src="/img/volume.png" alt="volume">
+                    </div>
+                    <div id="unMuteButton" class="volume-mute-off" onclick="UnMute();">
+                        <img id="un-mute-button" src="/img/volume-mute.png" alt="volume mute">
+                    </div>
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+            <div class="right-content-titles">
+                <ul>
+                    <li><a id="song-0" class="brown-title-song-0" href="#" onclick="PlayFirstSong()">01. Indian - Nina
+                            chay,
+                            samba chay</a></li>
+                    <li><a id="song-1" href="#" onclick="PlaySecondSong()">02. Druga piosenka</a></li>
+                    <li><a id="song-2" href="#" onclick="PlayThirdSong()">03. Trzecia piosenkaa</a></li>
+                    <li><a id="song-3" href="#" onclick="PlayFourthSong()">04. Czwarta piosenka</a></li>
+                    <li><a id="song-4" href="#" onclick="PlayFifthSong()">05. Piąta piosenka</a></li>
+                    <li><a id="song-5" href="#" onclick="PlaySixthSong()">06. Szósta piosenka</a></li>
+                </ul>
+            </div>
+            <div class="right-content-times">
+                <ul>
+                    <li id="time-0">1</li>
+                    <li id="time-1">2</li>
+                    <li id="time-2">3</li>
+                    <li id="time-3">4</li>
+                    <li id="time-4">5</li>
+                    <li id="time-5">6</li>
+                </ul>
+            </div>
+            <div class="right-content-scroll">
+                <div class="scroll-bottom"></div>
+                <div class="scroll-on-top"></div>
+            </div>
+            <div class="social-media-content">
+                <img class="img-fb-style" src="/img/facebook.png" alt="facebook">
+                <img class="img-sc-style" src="/img/soundcloud.png" alt="soundcloud">
+                <img class="img-tw-style" src="/img/twitter.png" alt="twitter">
+            </div>
+            <div class="clear"></div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">Copyright by Piotr Turek</span>
+    </footer>
+    <script src="/app/js/player.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@import url(/styles/wrap.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* help */
+:root {
+  --border-color: rgba(0, 0, 0, 0.2);
+}
+
+.border--around {
+  border: 3px solid var(--border-color);
+}
+
+.border--left-right {
+  border-left: 3px solid var(--border-color);
+  border-right: 3px solid var(--border-color);
+}
+
+.border--top-bottom {
+  border-top: 3px solid var(--border-color);
+  border-bottom: 3px solid var(--border-color);
+}
+
+.hidden {
+  display: none !important;
+}
+/* reszta */
+.tictactoe {
+  background: radial-gradient(circle at top, #d478ff, #fccbf5);
+  width: clamp(275px, 50%, 500px);
+  font-family: "Work sans";
+  font-weight: 400;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tictactoe__header {
+  display: flex;
+  background: linear-gradient(45deg, #fc3ee2, #c343ff, #fc3ee2);
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.tictactoe__logo {
+  width: 100px;
+  text-align: justify;
+}
+
+.tictactoe__logo span {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 75%;
+}
+
+.tictactoe__turn span {
+  display: flex;
+  justify-content: center;
+}
+
+#turn {
+  font-size: 30px;
+}
+
+.tictactoe__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.tictactoe div.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: clamp(64px, 15vw, 128px);
+  user-select: none;
+}
+
+#results {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work sans";
+  font-weight: 400;
+  gap: 50px;
+  text-align: center;
+}
+
+#results button {
+  width: 200px;
+  height: 50px;
+  font-family: "Work sans";
+  font-weight: 400;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.results__text {
+  font-size: 64px;
+  background-color: white;
+  padding: 25px 50px;
+  border-radius: 25px;
+}
+
+.enabled {
+  cursor: pointer;
+}
+
+.enabled:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

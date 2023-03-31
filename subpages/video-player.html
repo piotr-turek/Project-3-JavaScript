@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="/styles/video-player.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="return">&lt; HOME PAGE</a>
+    </header>
+    <main>
+        <div class="main">
+            <div class="video-screen">
+                <div class="linear-father">
+                    <canvas id="canvas"></canvas>
+                    <video ontimeupdate="doCurrentTimeMeasure()" id="videoPlayer" style="width: 614px;">
+                        <source src="/mp4/video.mp4" type="video/mp4">
+                    </video>
+                    <div id="linearGradientWithControls" class="linear-gradient-visible-on">
+                        <div class="progress-line">
+                            <div id="progressLineBottom" class="progress-line-bottom"></div>
+                            <div id="progressLineTop" class="progress-line-top"></div>
+                        </div>
+                        <div id="playButton" class="play-container-visible-on">
+                            <img src="/img/video-player/play.png" alt="play button"
+                                onclick="ChangePlayButtonToPauseButton();" />
+                        </div>
+                        <div id="pauseButton" class="pause-containter-visible-off">
+                            <img src="/img/video-player/pause-button.png" alt="pause button"
+                                onclick="ChangePauseButtonToPlayButton();" />
+                        </div>
+                        <div class="current-time-container">
+                            <p id="current-time">00:00</p>
+                            <p id="dash-between-times">/</p>
+                            <p id="duration-time">00:00</p>
+                        </div>
+                        <div id="muteButton" class="mute-ico-visible-on">
+                            <img src="/img/video-player/volume.png" alt="volume ico" onclick="doMute();" />
+                        </div>
+                        <div id="unMuteButton" class="un-mute-ico-visible-off">
+                            <img src="/img/video-player/volume-mute.png" alt="mute ico" onclick="doUnMute();" />
+                        </div>
+                        <div class="size-ico-visible-on">
+                            <img src="/img/video-player/size.png" alt="size ico" onclick="MakeFullScreen();" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span class="copyright">Made by Piotr Turek</span>
+    </footer>
+    <script src="/app/js/video-player.js"></script>
+</body>
+
+</html>
