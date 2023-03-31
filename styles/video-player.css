@@ -181,6 +181,7 @@ video {
   top: 0px;
   left: 0px;
   transform: scale(1.2);
+  filter: blur(50px);
   -webkit-filter: blur(50px);
   opacity: 0.75;
   z-index: -1;
