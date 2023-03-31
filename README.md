@@ -1,4 +1,5 @@
-###I'm just learning JavaScript here :)
-##Check out my project!
+# I'm just learning JavaScript here :)
 
-~by Piotr Turek
+## Check out my project!
+
+_~by Piotr Turek_
