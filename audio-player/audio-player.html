@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player</title>
-    <link rel="stylesheet" href="/styles/player.css">
+    <link rel="stylesheet" href="audio-player.css">
 </head>
 
 <body>
@@ -15,16 +15,16 @@
     </header>
     <main>
         <audio id="player-audio">
-            <source src="http://127.0.0.1:5500/mp3/utwor-pierwszy.mp3" type="audio/mpeg">
-            <source src="http://127.0.0.1:5500/mp3/utwor-drugi.mp3" type="audio/mpeg">
-            <source src="http://127.0.0.1:5500/mp3/utwor-trzeci.mp3" type="audio/mpeg">
-            <source src="http://127.0.0.1:5500/mp3/utwor-czwarty.mp3" type="audio/mpeg">
-            <source src="http://127.0.0.1:5500/mp3/utwor-piaty.mp3" type="audio/mpeg">
-            <source src="http://127.0.0.1:5500/mp3/utwor-szosty.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-pierwszy.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-drugi.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-trzeci.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-czwarty.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-piaty.mp3" type="audio/mpeg">
+            <source src="http://127.0.0.1:5500/audio-player/mp3/utwor-szosty.mp3" type="audio/mpeg">
         </audio>
         <div class="main">
             <div class="left-content">
-                <img src="/img/photo.png" alt="left photo">
+                <img src="img/photo.png" alt="left photo">
                 <div class="progress-line">
                     <div id="progress-bottom" class="progress-line-bottom">
 
@@ -35,22 +35,22 @@
                 </div>
                 <div class="controls">
                     <div class="prev">
-                        <img src="/img/prev.png" alt="prev" onclick="PlayPrevSong();">
+                        <img src="img/prev.png" alt="prev" onclick="PlayPrevSong();">
                     </div>
                     <div id="playButton" class="play-button-on">
-                        <img src="/img/play-button.png" alt="play button" onclick="changePlayButtonToPauseButton()">
+                        <img src="img/play-button.png" alt="play button" onclick="changePlayButtonToPauseButton()">
                     </div>
                     <div id="pauseButton" class="pause-button-off">
-                        <img src="/img/pause-button.png" alt="pause button" onclick="changePauseButtonToPlayButton()">
+                        <img src="img/pause-button.png" alt="pause button" onclick="changePauseButtonToPlayButton()">
                     </div>
                     <div class="next">
-                        <img src="/img/next.png" alt="next" onclick="PlayNextSong();">
+                        <img src="img/next.png" alt="next" onclick="PlayNextSong();">
                     </div>
                     <div id="muteButton" class="volume" onclick="Mute();">
-                        <img id="mute-button" src="/img/volume.png" alt="volume">
+                        <img id="mute-button" src="img/volume.png" alt="volume">
                     </div>
                     <div id="unMuteButton" class="volume-mute-off" onclick="UnMute();">
-                        <img id="un-mute-button" src="/img/volume-mute.png" alt="volume mute">
+                        <img id="un-mute-button" src="img/volume-mute.png" alt="volume mute">
                     </div>
                 </div>
                 <div class="clear">
@@ -84,9 +84,9 @@
                 <div class="scroll-on-top"></div>
             </div>
             <div class="social-media-content">
-                <img class="img-fb-style" src="/img/facebook.png" alt="facebook">
-                <img class="img-sc-style" src="/img/soundcloud.png" alt="soundcloud">
-                <img class="img-tw-style" src="/img/twitter.png" alt="twitter">
+                <img class="img-fb-style" src="img/facebook.png" alt="facebook">
+                <img class="img-sc-style" src="img/soundcloud.png" alt="soundcloud">
+                <img class="img-tw-style" src="img/twitter.png" alt="twitter">
             </div>
             <div class="clear"></div>
         </div>
@@ -94,7 +94,7 @@
     <footer>
         <span class="copyright">Copyright by Piotr Turek</span>
     </footer>
-    <script src="/app/js/player.js"></script>
+    <script src="audio-player.js"></script>
 </body>
 
 </html>

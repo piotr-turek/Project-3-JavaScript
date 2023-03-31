@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
-    <link rel="stylesheet" href="/styles/video-player.css">
+    <link rel="stylesheet" href="video-player.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
                 <div class="linear-father">
                     <canvas id="canvas"></canvas>
                     <video ontimeupdate="doCurrentTimeMeasure()" id="videoPlayer" style="width: 614px;">
-                        <source src="/mp4/video.mp4" type="video/mp4">
+                        <source src="mp4/video.mp4" type="video/mp4">
                     </video>
                     <div id="linearGradientWithControls" class="linear-gradient-visible-on">
                         <div class="progress-line">
@@ -27,11 +27,10 @@
                             <div id="progressLineTop" class="progress-line-top"></div>
                         </div>
                         <div id="playButton" class="play-container-visible-on">
-                            <img src="/img/video-player/play.png" alt="play button"
-                                onclick="ChangePlayButtonToPauseButton();" />
+                            <img src="img/play.png" alt="play button" onclick="ChangePlayButtonToPauseButton();" />
                         </div>
                         <div id="pauseButton" class="pause-containter-visible-off">
-                            <img src="/img/video-player/pause-button.png" alt="pause button"
+                            <img src="img/pause-button.png" alt="pause button"
                                 onclick="ChangePauseButtonToPlayButton();" />
                         </div>
                         <div class="current-time-container">
@@ -40,13 +39,13 @@
                             <p id="duration-time">00:00</p>
                         </div>
                         <div id="muteButton" class="mute-ico-visible-on">
-                            <img src="/img/video-player/volume.png" alt="volume ico" onclick="doMute();" />
+                            <img src="img/volume.png" alt="volume ico" onclick="doMute();" />
                         </div>
                         <div id="unMuteButton" class="un-mute-ico-visible-off">
-                            <img src="/img/video-player/volume-mute.png" alt="mute ico" onclick="doUnMute();" />
+                            <img src="img/volume-mute.png" alt="mute ico" onclick="doUnMute();" />
                         </div>
                         <div class="size-ico-visible-on">
-                            <img src="/img/video-player/size.png" alt="size ico" onclick="MakeFullScreen();" />
+                            <img src="img/size.png" alt="size ico" onclick="MakeFullScreen();" />
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -58,7 +57,7 @@
     <footer>
         <span class="copyright">Made by Piotr Turek</span>
     </footer>
-    <script src="/app/js/video-player.js"></script>
+    <script src="video-player.js"></script>
 </body>
 
 </html>
