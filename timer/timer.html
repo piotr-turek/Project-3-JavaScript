@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="return">&lt; HOME PAGE</a>
+    </header>
+    <main>
+        <div id="main-container-of-timer">
+            <div id="main-sub-container-of-timer">
+                <div id="countdown" data-minutes-left="20" data-reset-delay="5">
+                    <p><strong>Do końca promocji pozostało</strong></p>
+                    <div class="canvas-container">
+                        <canvas id="dni"></canvas>
+                        <canvas id="godzin"></canvas>
+                        <canvas id="minut"></canvas>
+                        <canvas id="sekund"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">Copyright by
+            <a href="https://piotr-turek.github.io/" target="_blank" rel="author"> Piotr Turek</a>
+        </span>
+    </footer>
+    <script src="timer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@import url(/general.css);
+
+#main-container-of-timer {
+  width: 672px;
+  min-height: 300px;
+  padding: 30px;
+
+  margin: auto;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(91, 180, 155),
+    rgb(30, 139, 157)
+  );
+}
+#main-sub-container-of-timer {
+  min-height: 358px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #60b2a9;
+  border-radius: 40px;
+}
+#countdown p {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+#countdown .canvas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 500px) {
+  #countdown .canvas-container {
+    max-width: 220px;
+  }
+  #countdown canvas:nth-child(-n + 2) {
+    margin-bottom: 10px;
+  }
+}
