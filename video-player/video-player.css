@@ -4,13 +4,12 @@
 }
 
 body {
-  background-color: #232326;
+  background-color: var(--main-color);
 }
 .main {
   width: 614px;
   min-height: 346px;
   margin: auto;
-
   border-radius: 10px;
   background-color: #232332;
   margin-top: 100px;
