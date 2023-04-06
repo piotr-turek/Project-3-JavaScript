@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap");
 
+:root {
+  --main-color: #12152b;
+  --coding-green: #62ffd9;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -26,6 +31,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 span.copyright {
@@ -39,5 +45,9 @@ header a {
   font-weight: 400;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+span.copyright a {
+  color: var(--coding-green);
 }

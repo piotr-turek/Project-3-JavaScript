@@ -5,7 +5,9 @@
 *::after {
   box-sizing: content-box;
 }
-
+body {
+  background-color: var(--main-color);
+}
 .main {
   width: 855px;
   min-height: 400px;
@@ -13,7 +15,7 @@
   margin: auto;
   padding-bottom: 20px;
   border-radius: 40px;
-  background-color: #232332;
+  border: 1px solid white;
 }
 .left-content {
   padding-left: 40px;

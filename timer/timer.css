@@ -1,16 +1,13 @@
 @import url(/general.css);
 
+body {
+  background-color: var(--main-color);
+}
 #main-container-of-timer {
   width: 672px;
   min-height: 300px;
   padding: 30px;
-
   margin: auto;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(91, 180, 155),
-    rgb(30, 139, 157)
-  );
 }
 #main-sub-container-of-timer {
   min-height: 358px;
