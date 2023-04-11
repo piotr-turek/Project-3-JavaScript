@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <header>
+        <a href="/" class="return">&lt; HOME PAGE</a>
+    </header>
+
+    <main>
+        <section id="form">
+            <div id="form__switch">
+                <span tabindex="0" id="form__switch__button--login"
+                    class="form__switch__button form__switch__button--active">LOGIN</span>
+                <span tabindex="0" id="form__switch__button--register" class="form__switch__button">REGISTER</span>
+            </div>
+            <div class="form__form" id="form__login">
+                <form>
+                    <div class="field">
+                        <label for="login__username">Username</label>
+                        <input id="username" type="text" placeholder="Username">
+                    </div>
+                    <div class="field">
+                        <label for="login__password">Password</label>
+                        <input id="password" type="password" placeholder="Password">
+                    </div>
+                    <input class="form__form__sumbit" type="submit" value="Login">
+                    <span>Don't have an account yet? <span id="register-span" tabindex="0"
+                            class="coding-green-font">Create new
+                            account</span>.</span>
+                </form>
+            </div>
+            <div class="form__form hidden" id="form__register">
+                <form>
+                    <div class="field half">
+                        <label for="register__first-name">First name</label>
+                        <input id="register__first-name" type="text" placeholder="First Name">
+                    </div>
+                    <div class="field half">
+                        <label for="register__last-name">Last name</label>
+                        <input id="register__last-name" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="field">
+                        <label for="register__username">Username</label>
+                        <input id="register__username" type="text" placeholder="Username">
+                    </div>
+                    <div class="field">
+                        <label for="register__email">E-mail</label>
+                        <input id="register__email" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="field">
+                        <label for="register__password">Password</label>
+                        <input id="register__password" type="password" placeholder="Password">
+                    </div>
+                    <div class="field">
+                        <label for="register__password-repeat">Repeat password</label>
+                        <input id="register__password-repeat" type="password" placeholder="Repeat password">
+                    </div>
+                    <input class="form__form__sumbit" type="submit" value="Register">
+                    <span>Already have account? <span id="login-span" tabindex="0" class="coding-green-font">Login
+                            to your account</span>.</span>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span class="copyright">Copyright by
+            <a href="https://piotr-turek.github.io/" target="_blank" rel="author"> Piotr Turek</a>
+        </span>
+    </footer>
+    <script src="form.js"></script>
+</body>
+
+</html>
