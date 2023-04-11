@@ -12,7 +12,7 @@ body {
 
 #form {
   background-color: rgba(0, 0, 0, 0.2);
-  width: clamp(300px, 80%, 800px);
+  width: clamp(300px, 80%, 600px);
   color: var(--coding-green);
   font-family: "Work sans";
   font-weight: 400;
@@ -30,6 +30,12 @@ body {
   flex-grow: 1;
   padding: 10px;
   cursor: pointer;
+  width: 50%;
+  transition: 0.2s;
+}
+
+.form__switch__button:not(.form__switch__button--active):hover {
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .form__switch__button--active {
@@ -39,10 +45,10 @@ body {
 .form__form form {
   padding: 5%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.05);
+  gap: 15px;
+  min-height: 500px;
 }
 
 input {
@@ -67,6 +73,10 @@ input:focus {
   margin-top: 1rem;
   color: black;
   cursor: pointer;
+  font-family: var(--main-font);
+  margin-top: auto;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .form__form__sumbit:focus {
@@ -74,7 +84,7 @@ input:focus {
 }
 
 .form__form span {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: white;
   width: 100%;
 }
@@ -106,6 +116,23 @@ label {
   gap: 5px;
 }
 
-.field.half {
-  width: calc(50% - 8px);
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.field:has(*:required) label::after,
+.required-span::before {
+  content: " *";
+  color: red;
+}
+
+.required-span {
+  line-height: 1;
+  gap: 0;
+  text-align: left;
+  color: var(--coding-green) !important;
+  font-size: 0.7rem !important;
+  margin-top: -5px;
 }

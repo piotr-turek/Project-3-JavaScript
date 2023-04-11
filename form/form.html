@@ -25,12 +25,13 @@
                 <form>
                     <div class="field">
                         <label for="login__username">Username</label>
-                        <input id="username" type="text" placeholder="Username">
+                        <input required="true" id="username" type="text" placeholder="Username">
                     </div>
                     <div class="field">
                         <label for="login__password">Password</label>
-                        <input id="password" type="password" placeholder="Password">
+                        <input required="true" id="password" type="password" placeholder="Password">
                     </div>
+                    <span class="required-span">Required</span>
                     <input class="form__form__sumbit" type="submit" value="Login">
                     <span>Don't have an account yet? <span id="register-span" tabindex="0"
                             class="coding-green-font">Create new
@@ -39,30 +40,34 @@
             </div>
             <div class="form__form hidden" id="form__register">
                 <form>
-                    <div class="field half">
-                        <label for="register__first-name">First name</label>
-                        <input id="register__first-name" type="text" placeholder="First Name">
-                    </div>
-                    <div class="field half">
-                        <label for="register__last-name">Last name</label>
-                        <input id="register__last-name" type="text" placeholder="Last Name">
+                    <div class="name">
+                        <div class="field">
+                            <label for="register__first-name">First name</label>
+                            <input required="true" id="register__first-name" type="text" placeholder="First Name">
+                        </div>
+                        <div class="field">
+                            <label for="register__last-name">Last name</label>
+                            <input id="register__last-name" type="text" placeholder="Last Name">
+                        </div>
                     </div>
                     <div class="field">
                         <label for="register__username">Username</label>
-                        <input id="register__username" type="text" placeholder="Username">
+                        <input required="true" id="register__username" type="text" placeholder="Username">
                     </div>
                     <div class="field">
                         <label for="register__email">E-mail</label>
-                        <input id="register__email" type="email" placeholder="E-mail">
+                        <input required="true" id="register__email" type="email" placeholder="E-mail">
                     </div>
                     <div class="field">
                         <label for="register__password">Password</label>
-                        <input id="register__password" type="password" placeholder="Password">
+                        <input required="true" id="register__password" type="password" placeholder="Password">
                     </div>
                     <div class="field">
                         <label for="register__password-repeat">Repeat password</label>
-                        <input id="register__password-repeat" type="password" placeholder="Repeat password">
+                        <input required="true" id="register__password-repeat" type="password"
+                            placeholder="Repeat password">
                     </div>
+                    <span class="required-span">Required</span>
                     <input class="form__form__sumbit" type="submit" value="Register">
                     <span>Already have account? <span id="login-span" tabindex="0" class="coding-green-font">Login
                             to your account</span>.</span>
