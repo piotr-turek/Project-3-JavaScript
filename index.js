@@ -20,7 +20,6 @@ arrowLeft.addEventListener("click", () => {
   }
   projectsList.scrollTo({
     left: currentPosition,
-    behavior: "smooth",
   });
 });
 
@@ -34,6 +33,5 @@ arrowRight.addEventListener("click", () => {
   }
   projectsList.scrollTo({
     left: currentPosition,
-    behavior: "smooth",
   });
 });
