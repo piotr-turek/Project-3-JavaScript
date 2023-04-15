@@ -14,135 +14,97 @@
         <h1>Witaj na mojej stronie z projektami <span class="html-color">HTML</span>, <span
                 class="css-color">CSS</span>, <span class="javascript-color">Java</span>Script!</h1>
     </header>
-    <!-- <main>
-        <h2>Zajrzyj do moich projektów:</h2>
-        <div class="main-buttons">
 
-            <div class="button">
-                <a href="audio-player/audio-player.html">Audio Player</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                    </div>
-                </div>
-            </div>
+    <!-- <img src="img/html5.svg" alt="html 5 icon">
+    <img src="img/css3-alt.svg" alt="css 3 icon">
+    <img src="img/js.svg" alt="javascript icon">
+    <img src="img/php.svg" alt="php icon">
+    <img src="img/wordpress.svg" alt="wordpress icon"> -->
 
-            <div class="button">
-                <a href="video-player/video-player.html">Video Player</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <a href="tictactoe/tictactoe.html">TicTacToe</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <a href="timer/timer.html">Timer</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <a href="qr-code/qr-code.html">QR Code</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <a target="_blank" href="https://ravid.pl" rel="external">Ravid.pl</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                        <img src="img/php.svg" alt="php icon">
-                        <img src="img/wordpress.svg" alt="wordpress icon">
-                    </div>
-                </div>
-            </div>
-            <div class="button">
-                <a target="_blank" href="/form/form.html">Login/Register Form</a>
-                <div class="description">
-                    <div class="tech">
-                        <img src="img/html5.svg" alt="html 5 icon">
-                        <img src="img/css3-alt.svg" alt="css 3 icon">
-                        <img src="img/js.svg" alt="javascript icon">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main> -->
     <main>
-        <ul>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="img/audio-player-preview.png" alt="audio player project preview">
-                    <h2>PROJEKT</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, repellendus at ad quae nobis
-                        sunt corrupti praesentium culpa autem. Quas quibusdam ad quos commodi voluptatibus, unde nobis
-                        vitae sunt blanditiis.
-                        Eligendi, qui eaque. Saepe, omnis similique eveniet quibusdam accusamus, aut porro, vero
-                        possimus sed dignissimos deserunt incidunt sint molestiae dolor voluptas consectetur beatae
-                        necessitatibus voluptatibus. Deserunt quos iusto velit sit!</p>
-                </a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </a>
-            </li>
-            <li>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="" alt="">
-                    <h2></h2>
-                    <p></p>
-                </a>
-            </li>
-        </ul>
-
+        <h2>Zajrzyj do moich projektów:</h2>
+        <div id="projects-carusell">
+            <a href="#" class="projects-arrow" id="projects-arrow--left"><img src="img/angle-left-solid.svg" alt=""></a>
+            <ul>
+                <li id="project-1">
+                    <a href="audio-player/audio-player.html">
+                        <h1>Audio Player</h1>
+                        <img src="img/audio-player-preview.png" alt="audio player project preview">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                            <img src="img/js.svg" alt="javascript icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="project-2">
+                    <a href="video-player/video-player.html">
+                        <h1>Video Player</h1>
+                        <img src="img/video-player-preview.png" alt="">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                            <img src="img/js.svg" alt="javascript icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="project-3">
+                    <a href="tictactoe/tictactoe.html">
+                        <h1>TicTacToe</h1>
+                        <img src="img/tictactoe-preview.png" alt="">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                            <img src="img/js.svg" alt="javascript icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="project-4">
+                    <a href="/form/form.html">
+                        <h1>Login/register form</h1>
+                        <img src="img/form-preview.png" alt="">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                            <img src="img/js.svg" alt="javascript icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="project-5">
+                    <a target="_blank" href="https://ravid.pl" rel="external">
+                        <h1>www.Ravid.pl</h1>
+                        <span class="live">LIVE! <img src="img/arrow-up-right-from-square-solid.svg" alt=""></span>
+                        <img src="img/ravid-preview.png" alt="">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                            <img src="img/js.svg" alt="javascript icon">
+                            <img src="img/php.svg" alt="php icon">
+                            <img src="img/wordpress.svg" alt="wordpress icon">
+                        </div>
+                    </a>
+                </li>
+                <li id="project-6">
+                    <a href="qr-code/qr-code.html">
+                        <h1>QR Code</h1>
+                        <img src="img/qr-code-preview.png" alt="">
+                        <div class="stack-container">
+                            <img src="img/html5.svg" alt="html 5 icon">
+                            <img src="img/css3-alt.svg" alt="css 3 icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="projects-arrow" id="projects-arrow--right"><img src="img/angle-right-solid.svg"
+                    alt=""></a>
+        </div>
     </main>
+
     <footer>
-        <span>Copyright by
-            <a href="https://piotr-turek.github.io/" target="_blank" rel="author"> Piotr Turek</a>
+        <span>Copyright by <a href="https://piotr-turek.github.io/" target="_blank" rel="author"> Piotr Turek</a>
         </span>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
