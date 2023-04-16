@@ -165,6 +165,7 @@ li:last-child {
 .projects-arrow img {
   width: 100%;
   opacity: 0.5;
+  transition: 0.3s;
 }
 
 .stack-container {
@@ -222,4 +223,8 @@ li:hover h1 {
 li:hover img,
 li:hover .stack-container {
   filter: brightness(0.5);
+}
+
+.projects-arrow:hover img {
+  opacity: 1;
 }
